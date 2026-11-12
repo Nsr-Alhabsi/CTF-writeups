@@ -1,0 +1,6 @@
+loot/
+recon/
+files/
+notes.md
+__pycache__/
+.venv/
