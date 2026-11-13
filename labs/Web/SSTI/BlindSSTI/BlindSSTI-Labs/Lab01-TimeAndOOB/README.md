@@ -27,7 +27,7 @@ Example request:
 
 ```bash
 curl -s http://127.0.0.1:8000/feedback \
-  --data-urlencode 'name=Nasser' --data 'message=hi'
+  --data-urlencode 'name=Bill' --data 'message=hi'
 ```
 
 ## Your mission
