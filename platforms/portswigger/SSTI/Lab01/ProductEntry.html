@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!--LAB_HEAD_START-->
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>Basic SSRF against the local server</title>
+    </head>
+<!--LAB_HEAD_END-->
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <!--LAB_HEADER_START-->
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>Basic SSRF against the local server</h2>
+                            <a class=link-back href='https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--LAB_HEADER_END-->
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="product">
+                        <h3>3D Voice Assistants</h3>
+                        <img src="/resources/images/rating4.png">
+                        <div id="price">$23.09</div>
+                        <img src="/image/productcatalog/products/47.jpg">
+                        <label>Description:</label>
+                        <p>Voice assistants have just got so much better. You no longer have to look at a blank screen, your 3d assistant can be customized to resemble anyone you want it to be. Your assistant works via a Bluetooth connection enabling you to keep that cell tucked away out of sight. Pop your assistant on the table, in your top pocket, or anywhere you like. Just like other voice assistants you can communicate in real time and ask it anything you need to know.</p>
+<p>You will never be alone with your 3D assistant. Good company for all occasions, debate, play puzzles and listen to your choice of music together. Your assistant comes with a 600 page, hard copy, instruction manual, allowing you to train it to its full capacity. There are over 5000 command and responses you can easily input ensuring many evenings of entertaining conversation, and mind-boggling facts and figures that will blow your mind.</p>
+<p>Once fully enabled you only need to update your assistant once a month when we send you the upgraded 500-page electronic instruction manual. You will always be abreast of the latest technology and on top of current affairs as our team trawl the net for new information for you to add to your existing database. Get yourself a pocket friend and expand your mind today.</p>
+                        <form id="stockCheckForm" action="/product/stock" method="POST">
+                            <select name="stockApi">
+                                <option value="http://stock.weliketoshop.net:8080/product/stock/check?productId=1&storeId=1">London</option>
+                                <option value="http://stock.weliketoshop.net:8080/product/stock/check?productId=1&storeId=2">Paris</option>
+                                <option value="http://stock.weliketoshop.net:8080/product/stock/check?productId=1&storeId=3">Milan</option>
+                            </select>
+                            <button type="submit" class="button">Check stock</button>
+                        </form>
+                        <span id="stockCheckResult"></span>
+                        <script src="/resources/js/stockCheckPayload.js"></script>
+                        <script src="/resources/js/stockCheck.js"></script>
+                        <div class="is-linkback">
+                            <a href="/">Return to list</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>
