@@ -1,0 +1,1 @@
+flag{f1ltered_bl1nd_ssti_statement_tags_ftw}
