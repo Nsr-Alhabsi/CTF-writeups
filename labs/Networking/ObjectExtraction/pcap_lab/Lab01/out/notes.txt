@@ -1,0 +1,5 @@
+Server migration notes
+----------------------
+- move cron jobs to new host
+- rotate keys
+- emergency recovery phrase: flag{ftp_d4ta_ch4nn3l_f0und}
